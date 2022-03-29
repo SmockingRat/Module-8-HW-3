@@ -73,7 +73,6 @@ namespace Module_8_HW_3
             try
             {
                 DirectoryInfo dr = new DirectoryInfo(path);
-                double CompareTime = (DateTime.Now - dr.LastAccessTime).TotalMinutes;
                 dr.Delete(true);
             }
             catch (Exception message)
